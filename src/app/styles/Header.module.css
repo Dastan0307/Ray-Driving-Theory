@@ -1,0 +1,38 @@
+.header {
+	width: 100%;
+	border-radius: 0px 0px 16px 16px;
+	background-color: rgba(249, 249, 249, 1);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 16px;
+
+}
+
+.header h1 {
+	width: 164px;
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 26px;
+	text-align: left;
+}
+.headerBtns {
+	width: 100%;
+	max-width: 104px;
+	height: 32px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.headerIcon {
+	width: 60px;
+	height: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	background-color: rgba(255, 255, 255, 1);
+	color: rgb(44, 45, 46);
+}
