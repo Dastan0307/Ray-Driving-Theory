@@ -40,7 +40,7 @@ export default function NavBar() {
 	const pathname = usePathname()
 
 	return (
-		<nav className={styles.nav}>
+		<nav className={pathname === '/leaderboard' ? styles.navNone : styles.nav}>
 			{navDetails.map(item => (
 				<Link href={item.link} key={item.id} className={styles.navOption}>
 					<Image
@@ -49,7 +49,13 @@ export default function NavBar() {
 						width={24}
 						height={24}
 					/>
-					<p className={pathname === item.link ? styles.navTitleActive : styles.navTitle}>{item.title}</p>
+					<p
+						className={
+							pathname === item.link ? styles.navTitleActive : styles.navTitle
+						}
+					>
+						{item.title}
+					</p>
 				</Link>
 			))}
 		</nav>

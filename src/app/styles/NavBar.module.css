@@ -8,6 +8,10 @@
 	background: rgb(255, 255, 255);
 }
 
+.navNone {
+	display: none !important;
+}
+
 .navOption {
 	width: 100%;
 	max-width: 90px;
