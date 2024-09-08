@@ -1,4 +1,6 @@
-export const cardDetails = [
+import { CardDetail } from '@/app/types/type'
+
+export const cardDetails: CardDetail[] = [
 	{
 		id: 1,
 		title: 'DVSA Exam',
@@ -26,7 +28,7 @@ export const cardDetails = [
 	},
 ]
 
-export const categoryDetails = [
+export const categoryDetails: CardDetail[] = [
 	{
 		id: 1,
 		title: 'Mistakes',

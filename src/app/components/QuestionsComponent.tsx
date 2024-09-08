@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import styles from '../styles/QuestionsComponent.module.css'
+import { Question } from '../types/type'
 
 const fetchQuestions = async () => {
 	const res = await fetch('/questions.json')
@@ -12,7 +13,7 @@ const fetchQuestions = async () => {
 }
 
 const QuestionsComponent = () => {
-	const [questions, setQuestions] = useState([]) // Для хранения вопросов который получаем из json
+	const [questions, setQuestions] = useState<Question[]>([]) // Для хранения вопросов который получаем из json
 	const [selectedQuestions, setSelectedQuestions] = useState<number[]>([]) // Для хранения ID выбранных вопросов из локалстораже
 
 	// Загружаем вопросы и состояние выбранных вопросов из localStorage
