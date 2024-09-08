@@ -10,7 +10,7 @@ export default function NavBar() {
 	const pathname = usePathname()
 
 	return (
-		<nav className={pathname === '/leaderboard' ? styles.navNone : styles.nav}>
+		<nav className={styles.nav}>
 			{navDetails.map(item => (
 				<Link href={item.link} key={item.id} className={styles.navOption}>
 					<Image
