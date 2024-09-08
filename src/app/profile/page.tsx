@@ -1,6 +1,6 @@
 const Profile = () => {
 	return (
-		<div style={{height: '776px'}}>
+		<div style={{height: "776px"}}>
 			<h1>Profile</h1>
 		</div>
 	)

@@ -3,38 +3,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { navDetails } from '../../../public/constants'
 import styles from '../styles/NavBar.module.css'
-
-const navDetails = [
-	{
-		id: 1,
-		title: 'Home',
-		icon: '/home.svg',
-		iconIsActive: '/homeactive.svg',
-		link: '/home',
-	},
-	{
-		id: 2,
-		title: 'Your plan',
-		icon: '/route.svg',
-		iconIsActive: '/routeactive.svg',
-		link: '/yourplan',
-	},
-	{
-		id: 3,
-		title: 'Leaderboard',
-		icon: '/ranking.svg',
-		iconIsActive: '/rankingactive.svg',
-		link: '/leaderboard',
-	},
-	{
-		id: 4,
-		title: 'Profile',
-		icon: '/profile.svg',
-		iconIsActive: '/profileactive.svg',
-		link: '/profile',
-	},
-]
 
 export default function NavBar() {
 	const pathname = usePathname()
